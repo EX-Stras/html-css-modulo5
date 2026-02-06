@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+:root {
+    --cor-primaria: #226AD6;
+    --cor-secundaria: #2231D6;
+    --cor-terciaria: #4E22D6;
+    --cor-de-fundo: rgb(255, 255, 255);
+    --font:
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/blue-370127_960_720.png);
+    background-size: cover;
+}
+
+header {
+    background-color: var(--cor-de-fundo);
+    position: relative;
+    height: 250px;
+    border-radius: 100px;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 2px 1px black;
+    margin-top: 20px;
+}
+section.header {
+    background-color: var(--cor-primaria);
+    height: 80%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.468);
+}
+
+section.header > h1 {
+    margin: 10px 0 30px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+section.header p {
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+section.header i.material-symbols-outlined {
+    font-size: 3em;
+    cursor: pointer;
+}
+
+p.instrucoes {
+    font-size: 1.2em;
+}
+
+main.principal {
+    width: 75%;
+    max-width: 700px;
+    background-color: var(--cor-de-fundo);
+    color: white;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px 10px 10px 10px;
+    border: 1px solid black;
+    box-shadow: rgba(0, 0, 0, 0.512) 0 0 2px 1px;
+}
+
+main.principal > h1 {
+    background-color: var(--cor-primaria);
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+main.principal > p {
+    text-align: justify;
+    text-indent: 10px;
+    margin: 10px 10px 0 10px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: 100;
+}
+div.alinhamento {
+    text-align: center;
+    margin: 20px 0;
+}
+
+section {
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    display: inline-block;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+section > a {
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    border: 3px solid black;
+    box-shadow: 0 0 2px 1px black;
+}
+
+code {
+    color: rgba(0, 0, 0, 0.512);
+}
+
+footer {
+    padding: 12px;
+    background-color: var(--cor-primaria);
+    border: 1px solid rgba(255, 255, 255, 0.495);
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: rgba(0, 0, 0, 0.512) 0 0 3px 1px;
+}
+
+footer > p > a{
+    text-decoration: none;
+    color: white;
+}
+
+footer > p > a:hover{
+    color: purple;
+    transition: ease 1s;
+}
