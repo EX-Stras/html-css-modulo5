@@ -78,6 +78,82 @@
       <p>O exemplo está no exercício 1 de flex box.</p>
     </main>
 
+    <main class="principal">
+      <h1>Flex Direction</h1>
+      <p>Ele altera como os itens estarão distribuidos.</p>
+      <pre>
+        <code>
+            .pai {
+              flex-direction: row; (configuração padrão)
+            }
+        </code>
+      </pre>
+      <p>Os elementos serão distribuídos da esquerda para a direita.</p>
+      <pre>
+        <code>
+          .pai {
+            flex-direction: row-reverse;
+          }
+        </code>
+      </pre>
+      <p>Agora os elementos estariam distribuídos da direita para a esquerda.</p>
+      <pre>
+        <code>
+          .pai {
+            flex-direction: column;
+          }
+        </code>
+      </pre>
+      <p>Vai virar uma coluna vertical de cima pra baixo.</p>
+       <pre>
+        <code>
+          .pai {
+            flex-direction: column-reverse;
+          }
+        </code>
+      </pre>
+      <p>Distribui os elementos de baixo pra cima.</p>
+
+      <p>De flex direction é só isso, vou fazer algo prático daqui a pouco.</p>
+    </main>
+
+    <main class="principal">
+      <h1>Eixos</h1>
+
+      <p>Vamos considerar primeiro um eixo na fex-direction: row, que é a configuração padrão. Vamos dar exemplo em todas as 4.</p>
+
+      <h2>Flex Direction: row</h2>
+
+      <p>Na flex-direction: row o eixo criado é o main-axis, ou eixo principal,que tem dois pontos, o main start (ou main inicial) e o main end (ou main final).</p>
+
+      <p>O outro eixo criado nesse caso é o cross-axis,(eixo transversal) que vem de cima pra baixo, ele também gera dois pontos, o cross-start e o cross-end, que seguem a mesma lógica do main start e o main end.</p>
+
+      <p>Sabendo desses nomes agora vamos dar o exemplo nos outros flex-direction.</p>
+
+      <h2>Flex Direction: row-reverse</h2>
+
+      <p>A diferença dele para o row é que o eixo horizontal vai da direita para a esquerda (main-axis), o cross-axis fica a mesma coisa.</p>
+
+      <h2>Flex Direction: column</h2>
+
+      <p>Agora acoisa complica um pouquinho.</p>
+
+      <p>Lembra que o main-axis era pra linha e o cross-axis pra coluna? Bom agora o papel deles inverteu, o main-axis aponta as colunas(vertical) e om cross-axis as linhas(horizontal).</p>
+
+      <p>O main-axis nesse caso vai de cima pra baixo, e o cross-axis vai da esquerda pra direita.</p>
+
+      <h2>Flex Direction: column-reverse</h2>
+
+      <p>Desse caso para o column normal o que muda é que o main-axis do column é de cima pra baixo, o do column-reverse é de baixo pra cima.</p>
+
+
+      
+
+      <pre>
+        <code></code>
+      </pre>
+    </main>
+
     <footer>
       <p>Esse site foi feito por <a href="">Lucas Menêzes Cândido</a> para prática de HTML5 e CSS3</p>
     </footer>

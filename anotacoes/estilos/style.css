@@ -16,8 +16,10 @@
 }
 
 body {
-    background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/blue-370127_960_720.png);
+    background: url(https://cdn.pixabay.com/photo/2014/06/16/23/40/blue-370127_960_720.png) left top no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    
 }
 
 header {
@@ -79,6 +81,16 @@ main.principal > h1 {
     background-color: var(--cor-primaria);
     text-align: center;
     border-radius: 10px 10px 0 0;
+}
+
+main.principal > h2 {
+    background-image: linear-gradient(to right, var(--cor-primaria), transparent);
+    text-align: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    padding-left: 10px;
+    text-indent: 5px;
+    border-radius: 10px 0 0 0;
 }
 
 main.principal > p {
