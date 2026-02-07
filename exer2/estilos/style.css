@@ -4,7 +4,7 @@
     text-align: center;
     display: flex;
     background-color: salmon;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .filho {

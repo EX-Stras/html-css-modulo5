@@ -146,13 +146,47 @@
       <h2>Flex Direction: column-reverse</h2>
 
       <p>Desse caso para o column normal o que muda é que o main-axis do column é de cima pra baixo, o do column-reverse é de baixo pra cima.</p>
+    </main>
 
-
-      
-
+    <main class="principal">
+      <h1>Flex Wrap</h1>
+      <p>O valor padrão dessa propriedade é:</p>
       <pre>
-        <code></code>
+        <code>
+          .pai {
+            flex-wrap: nowrap;
+          }
+        </code>
       </pre>
+
+      <p>Isso significa "não quebre", o que significa que esse propriedade define quando o conteúdo vai quebrar a linha (ir pra linha de baixo).</p>
+
+      <p>Nesse caso não vai nunca, o conteúdo só vai ficar diminuindo até não dar mais pra caber (isso se você tiver flex:auto, o que é recomendado).</p>
+
+      <p>Agora se a configuração for essa:</p>
+
+    <pre>
+      <code>
+          .pai {
+            flex-wrap: wrap;
+          }
+      </code>
+    </pre>
+
+    <p>Quando o espaço do eixo main-axis acabar o espaço, o conteúdo vai quebrar no sentido do eixo cross-axis, é meio confuso mas na prática é bem simples.</p>
+
+    <p>Também tem esse aqui:</p>
+
+    <pre>
+      <code>
+        .pai {
+          flex-wrap: wrap-reverse;
+        }
+      </code>
+    </pre>
+
+    <p>Ele faz a mesma coisa do wrap só que por exemplo, se fosse quebrar e ir pra esquerda em baixo, ele quebra e vai pra esquerda em cima dos outros elementos, ele vai na direção contrária ao cross-axis.</p>
+
     </main>
 
     <footer>
