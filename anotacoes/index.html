@@ -295,6 +295,97 @@
       <p>Eles seguem a mesma lógica que a gente viu no justify content, um alinha no cross start, o outro no cross end e o center alinha no centro, não tem erro.</p>
     </main>
 
+    <main class="principal">
+      <h1>Align Content</h1>
+      <p>Essa propriedade alinha os elementos no eixo transversal (cross-axis) quando eles estão empacotados.</p>
+      <p>Esse aqui vai ser complicado de explicar então vou trabalhar com exemplos:</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow: row wrap;
+            align-content: stretch; (valor padrão)
+          }
+        </code>
+      </pre>
+
+      <p>Primeiramente, oque essa propriedade faz? ela decide o que vai acontecer com os espaços em branco da flex-box.</p>
+      <p>Por exemplo, vamos supor que temos três conteúdos dentro de uma flex-box e ela quebra, o align content vai decidir para onde vai o conteúdo que quebrou a caixa baseado em quanto espaço ainda tem disponível no eixo cross-axis.</p>
+      <p>No caso do stretch, o computador divide o espaço disponível em 2 linhas de tamanho igual no eixo cross-axis, e expande ou diminui o tamanho dos itens para ocupar exatamente o tamanho do eixo transversal da sua linha.</p>
+      <p>Isso é bem confuso, então recomendo praticar.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow: row wrap;
+            align-content: flex-start;
+          }
+        </code>
+      </pre>
+
+      <p>Esse aqui é bem mais simples.</p>
+      
+      <p>Nesse caso, quando um elemento quebrar a caixa o align content vai puxar ele para perto do cross-start, e o resto do espaço fica todo pro cross-end.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow: row wrap;
+            align-content: flex-end;
+          }
+        </code>
+      </pre>
+      
+      <p>Aqui ele puxa todos os elementos para o cross-end, não importa se foi o que quebrou, nem qual linha o elemento está, ele vai para perto do cross-end.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow: row wrap;
+            align-content: center;
+          }
+        </code>
+      </pre>
+
+      <p>Aqui é simples, ele vai dividir o espaço sobrando em 2 partes e vai deixar os itens no centro do cross-axis.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow: row wrap;
+            align-content: space-between;
+          }
+        </code>
+      </pre>
+
+      <p>Aqui ele vai colocar os primeiros elementos próximos ao cross-start e os últimos elementos próximos ao cross-end, o espaço sobrando no meio ele vai dividir entre os elementos que virão à seguir.</p>
+
+      <p>Lembrando que tudo isso vale para os itens empacotados no main-axis.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow: row wrap;
+            align-content: space-evenly;
+          }
+        </code>
+      </pre>
+
+      <p>Ele divide os espaços entre os empacotamentos igualmente, é bem simples e no meu ver é o melhor.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow: row wrap;
+            align-content: space-around;
+          }
+        </code>
+      </pre>
+
+      <p>Esse aqui divide a área disponível pelo número de empacotamentos e coloca os empacotamentos no centro dessas divisões.</p>
+      
+    </main>
+
     <footer>
       <p>Esse site foi feito por <a href="">Lucas Menêzes Cândido</a> para prática de HTML5 e CSS3</p>
     </footer>
