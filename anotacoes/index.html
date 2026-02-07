@@ -51,6 +51,12 @@
         </section>
       </div>
 
+      <div class="alinhamento">
+        <section class="link">
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer3/index.html">Flex wrap</a>
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer4/index.html">Justify content</a>
+        </section>
+      </div>
       <p>Os projetos desse módulo:</p>
 
       <p>Aqui eu vou deixar algumas anotações:</p>
@@ -187,6 +193,79 @@
 
     <p>Ele faz a mesma coisa do wrap só que por exemplo, se fosse quebrar e ir pra esquerda em baixo, ele quebra e vai pra esquerda em cima dos outros elementos, ele vai na direção contrária ao cross-axis.</p>
 
+    </main>
+
+    <main class="principal">
+      <h1>Justify Content</h1>
+      <p>Esse cara alinha o conteúdo em relação ao main-axis.</p>
+
+      <p>Exemplos de valores:</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            justify-content: flex-start;
+          }
+        </code>
+      </pre>
+
+      <p>Isso faz o item com tal propriedade colar no main start da sua flex-box. Aqui, se tiver espaço sobrando vai ser jogado pro lado do main end.</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            justify-content: flex-end;
+          }
+        </code>
+      </pre>
+
+      <p>Já aqui, o item vai colar no main end, e o espaço sobrando sempre vai ficar pro lado do main start.</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            justify-content: center;
+          }
+        </code>
+      </pre>
+
+      <p>Aqui os itens serão alinhados no meio do main-axis, se sobrar espaço, o espaço será dividido entre o main start e o main end.</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            justify-content: space-between;
+          }
+        </code>
+      </pre>
+
+      <p>Nesse caso, o primeiro e o último item estarão respectivamente colado no main start e colado no main end, e os outros itens serão distribuídos igualmente.</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            justify-content: space-evenly;
+          }
+        </code>
+      </pre>
+
+      <p>Todos os espaços dentro da flex box terão o mesmo tamanho, entre um bloco e outro, entre o main start e o primeiro item e entre o último item e o main end.</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            justify-content: space-around;
+          }
+        </code>
+      </pre>
+
+      <p>Esse aqui pega a quantidade de intens dentro do pai, divide pelo espaço disponível e centraliza cada um dentro de cada "divisão de espaço".</p>
     </main>
 
     <footer>
