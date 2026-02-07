@@ -54,7 +54,7 @@
       <div class="alinhamento">
         <section class="link">
           <a href="https://ex-stras.github.io/html-css-modulo5/exer3/index.html">Flex wrap</a>
-          <a href="https://ex-stras.github.io/html-css-modulo5/exer4/index.html">Justify content</a>
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer4/index.html">Justify&Align</a>
         </section>
       </div>
       <p>Os projetos desse módulo:</p>
@@ -266,6 +266,33 @@
       </pre>
 
       <p>Esse aqui pega a quantidade de intens dentro do pai, divide pelo espaço disponível e centraliza cada um dentro de cada "divisão de espaço".</p>
+    </main>
+
+    <main class="principal">
+      <h1>Align itens</h1>
+      <p>O justify content alinha de acordo com o main-axis, o align-itens alinha de acordo com o cross-axis (alinhamento transversal).</p>
+
+      <pre>
+        <code>
+          .pai {
+            flex-flow:row nowrap;
+            align-itens: stretch; (valor padrão)
+          }
+        </code>
+      </pre>
+
+      <p>Significa esticar, ou seja, os itens irão ocupar o cross-axis do cross start até o cross end.</p>
+
+      <pre>
+        <code>
+           .pai {
+            flex-flow:row nowrap;
+            align-itens: flex-start; ou flex-end; ou center;
+           }
+        </code>
+      </pre>   
+      
+      <p>Eles seguem a mesma lógica que a gente viu no justify content, um alinha no cross start, o outro no cross end e o center alinha no centro, não tem erro.</p>
     </main>
 
     <footer>
