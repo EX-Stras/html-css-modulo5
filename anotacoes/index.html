@@ -61,13 +61,20 @@
       <div class="alinhamento">
         <section class="link">
           <a href="https://ex-stras.github.io/html-css-modulo5/exer5/index.html">Align Content</a>
-          <a href="https://ex-stras.github.io/html-css-modulo5/exer6/index.html">Align Content</a>
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer6/index.html">Order</a>
         </section>
       </div>
 
       <div class="alinhamento">
         <section class="link">
-          <a href="https://ex-stras.github.io/html-css-modulo5/exer7/index.html">Align Content</a>
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer7/index.html">Align Self</a>
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer8/index.html">Flex-Basis</a>
+        </section>
+      </div>
+
+      <div class="alinhamento">
+        <section class="link">
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer9/index.html">Shrink & Grow</a>
         </section>
       </div>
       
@@ -551,6 +558,47 @@
         <p>Um adendo aqui, eu descobri na prática agora que essas propriedades não funcionam direito em imagens.</p>
 
         <p>Acho que é por conta de elas já terem um tamanho definido de fábrica, então no exer8 eu usei width no lugar do flex-basis e no exer9 eu não usei imagens.</p>
+
+        <h2>Outros Valores</h2>
+        
+        <p>Agora fica um pouco mais complicado, recomendo usar essas propriedades fora de conteúdos de mídia, se não você vai perder muitos fios de cabelo.</p>
+
+        <pre>
+          <code>
+            .pai {
+              flex-flow: row nowrap;
+            }
+
+            .filho1 {
+              flex-basis: 150px;
+              flex-shrink: 1;
+              flex-grow: 1;
+            }
+
+            .filho2 {
+              flex-basis: 150px;
+              flex-shrink: 0;
+              flex-grow: 0;
+            }
+
+            .filho3 {
+              flex-basis: 150px;
+              flex-shrink: 2;
+              flex-grow: 2;
+            }
+            
+          </code>
+        </pre>
+
+        <p>Vamos por partes, o que significa o 2? Já vimos que o 0 signif9ca não pode, e o 1 significa "pode", eu coloquei entre aspas porque qualquer número diferente de zero está liberado para executar a ação.</p>
+
+        <p>O número que vem depois indica quanto ele vai crescer comparado aos outros que também vão (ou diminuir).</p>
+
+        <p>No caso o filho 1 está liberado para crescer ou diminuir normalmente, o filho 2 não pode crescer nem diminuir, e o filho 3 pode crescer e diminuir o dobro do filho 1.</p>
+
+        <p>Mas isso não acontece porque o grow ou o shrink dele é 2, é porque o número dele é o dobro do número do outro, se o filho 1 tivesse grow 4 e o filho 3 tivesse grow 8, o filho 3 ainda cresceria o dobro do filho 1.</p>
+
+        <p>É bem complicado, mas eu acho que deu pra entender ;).</p>
         
       </main>
 
