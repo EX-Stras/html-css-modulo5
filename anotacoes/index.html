@@ -490,7 +490,7 @@
         <pre>
           <code>
             .filho {
-             flex-basis: 200px;
+              flex-basis: 200px;
             }
           </code>
         </pre>
@@ -499,6 +499,59 @@
 
         <p>Enquanto tiver espaço as caixas ou a caixa vai ter 200px, mas se não for possível, as caixas vão diminuir de tamanho gradualmente e igualmente.</p>
 
+      </main>
+
+      <main class="principal">
+        <h1>Shrink & Grow</h1>
+        <p>Essas propriedades ajudam a definir o tamanho do elemento individualmente.</p>
+
+        <p>É como perguntar para o elemento pai, "pode encolher? pode aumenter?".</p>
+
+        <pre>
+          <code>
+            .pai {
+              flex-flow: row nowrap;
+            }
+
+            .filho {
+              flex-basis: 150px;
+              flex-shrink: 1;
+              flex-grow: 0;
+              (valor padrão)
+            }
+          </code>
+        </pre>
+
+        <p>Esses valores "1 e 0" é como dizer pode e não pode para essas propriedades.</p>
+
+        <p>Colocar "1" significa pode, ou seja, por padrão, quando necessário os itens vão encolher porque o valor padrão é 1.</p>
+
+        <p>Já se colocar "0" é como dizer que não pode, ou seja, os itens não vão crescer por padrão.</p>
+
+        <p>Quando eu digo crescer, eu digo que se for possível crescer, cresça, agora na hora de diminuir eu digo, se for necessário, diminua.</p>
+
+        <p>Então se você quiser que os elementos sejam totalmente elásticas você vai optar por essas configurações:</p>
+
+        <pre>
+          <code>
+            .pai {
+              flex-flow: row nowrap;
+            }
+
+            .filho {
+              flex-basis: 150px;
+              flex-shrink: 1;
+              flex-grow: 1;
+            }
+          </code>
+        </pre>
+
+        <p>Assim, quando o conteiner diminuir eles diminuem junto, quando o conteiner crescer, eles crescem junto.</p>
+
+        <p>Um adendo aqui, eu descobri na prática agora que essas propriedades não funcionam direito em imagens.</p>
+
+        <p>Acho que é por conta de elas já terem um tamanho definido de fábrica, então no exer8 eu usei width no lugar do flex-basis e no exer9 eu não usei imagens.</p>
+        
       </main>
 
     <footer>
