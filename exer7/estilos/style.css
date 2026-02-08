@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 10px;
+    background-color: aqua;
+    border: 3px dashed;
+    display: flex;
+    height: 500px;
+    align-items: flex-start;
+}
+
+img {
+    width: 100px;
+    border: 3px dashed;
+    margin: 2px;
+}
+
+.Feliz { align-self: flex-end;}
+.Quente { align-self: center;}
+.Flor { align-self: auto;}

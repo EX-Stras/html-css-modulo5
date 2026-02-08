@@ -86,8 +86,7 @@ main.principal > h1 {
 main.principal > h2 {
     background-image: linear-gradient(to right, var(--cor-primaria), transparent);
     text-align: left;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: 10px;
     padding-left: 10px;
     text-indent: 5px;
     border-radius: 10px 0 0 0;
@@ -124,6 +123,11 @@ section > a {
 
 code {
     color: rgba(0, 0, 0, 0.512);
+}
+
+strong {
+    font-weight: bold;
+    color: black;
 }
 
 footer {

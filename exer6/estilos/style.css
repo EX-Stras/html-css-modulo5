@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 10px;
+    background-color: aqua;
+    border: 3px dashed;
+    display: flex;
+}
+
+img {
+    width: 100px;
+    border: 3px dashed;
+    margin: 2px;
+}
+
+.Feliz { order: -5;  } 
+.Quente { order: 0; }
+.Flor { order: 8; }
+
+@media screen and (max-width: 700px) {
+    
+.Feliz { order: 2;  } 
+.Quente { order: 0; }
+.Flor { order: 1; }
+}

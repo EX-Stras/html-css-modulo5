@@ -57,6 +57,14 @@
           <a href="https://ex-stras.github.io/html-css-modulo5/exer4/index.html">Justify&Align</a>
         </section>
       </div>
+
+      <div class="alinhamento">
+        <section class="link">
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer5/index.html">Align Content</a>
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer6/index.html">Align Content</a>
+        </section>
+      </div>
+      
       <p>Os projetos desse módulo:</p>
 
       <p>Aqui eu vou deixar algumas anotações:</p>
@@ -143,9 +151,9 @@
 
       <h2>Flex Direction: column</h2>
 
-      <p>Agora acoisa complica um pouquinho.</p>
+      <p>Agora a coisa complica um pouquinho.</p>
 
-      <p>Lembra que o main-axis era pra linha e o cross-axis pra coluna? Bom agora o papel deles inverteu, o main-axis aponta as colunas(vertical) e om cross-axis as linhas(horizontal).</p>
+      <p>Lembra que o main-axis era pra linha e o cross-axis pra coluna? Bom agora o papel deles inverteu, o main-axis aponta as colunas(vertical) e o cross-axis as linhas(horizontal).</p>
 
       <p>O main-axis nesse caso vai de cima pra baixo, e o cross-axis vai da esquerda pra direita.</p>
 
@@ -385,6 +393,73 @@
       <p>Esse aqui divide a área disponível pelo número de empacotamentos e coloca os empacotamentos no centro dessas divisões.</p>
       
     </main>
+
+    <main class="principal">
+      <h1 style="border-radius: 10px 10px 10px 10px;">Flex Itens:</h1>
+    </main>
+
+      <main class="principal">
+        <h1>Order</h1>
+        <p>Isso não é uma tag, é o nome dado aos itens que recebem características do display flex.</p>
+        <p>Até agora só vimos o elemento pai receber essas características. Agora serão os elementos filhos.</p>
+        <pre>
+          <code>
+            .filho {
+              order: 0; (valor padrão)
+            }
+          </code>
+        </pre>
+        <p>Todo item dentro de uma flex box por padrão tem essa característica.</p>
+        <p>Basicamente, os números com o menor valor nessa propriedade são os primeiros a serem exibidos no main-axis.</p>
+        <p>Por exemplo, se tiver um número com order: 3 e outro com order: -9999; o primeiro a ser exibido vai ser o order: -9999;</p>
+            </main>
+      </main>
+
+      <main class="principal">
+        <h1>Align Self</h1>
+        <p>Ele tem 5 valores, vou explicar rapidinho porque os valores são os mesmos que a gente viu anteriormente.</p>
+        <pre>
+          <code>
+            .filho {
+              align-self: auto;
+            }
+          </code>
+        </pre>
+
+        <p>O que essa propriedade faz é exatamente o que a align itens, só que para um único elemento filho.</p>
+
+        <p>Nesse caso o elemento herda o align itens e o align content do pai só para ele.</p>
+
+        <pre>
+          <code>
+            .filho {
+              align-self: flex-start;
+            }
+
+            <strong>ou</strong>
+
+            .filho {
+              align-self: flex-end;
+            }
+
+            <strong>ou</strong>
+
+            .filho {
+              align-self: center;
+            }
+
+            <strong>ou</strong>
+
+            .filho {
+              align-self: stretch;
+            }
+          </code>
+        </pre>
+
+        <p>Eu fiz desse jeito porque nós já conhecemos essas características vindo do  <strong>Align itens</strong>, se estiver com dúvida leia o que cada uma faz lá.</p>
+        
+        <p>Resumindo, ele vai alinhar o item de acordo com o cross-axis.</p>
+      </main>
 
     <footer>
       <p>Esse site foi feito por <a href="">Lucas Menêzes Cândido</a> para prática de HTML5 e CSS3</p>
