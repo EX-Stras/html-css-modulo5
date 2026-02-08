@@ -15,7 +15,7 @@ body {
 
 main {
     background-color: salmon;
-    width: 80%;
+    width: 90%;
     padding: 5px;
     display: flex;
     flex-flow: row nowrap;
@@ -29,7 +29,9 @@ p {
     text-align: center;
     background-color: aqua;
     border: 3px dashed;
-    flex-basis: 250px;
-    flex-grow: 1;
-    flex-shrink: 1;
+    flex-basis: 200px;
 }
+
+#n1 { flex-grow: 0; flex-shrink: 0; } 
+#n2 { flex-grow: 1; flex-shrink: 1;} 
+#n3 { flex-grow: 2; flex-shrink: 2; }
