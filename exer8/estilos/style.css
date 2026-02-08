@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: salmon;
+    padding: 10px;
+    border: dashed 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 80%;
+}
+
+img {
+    width: 100px;
+    border: dashed 3px;
+    margin: 2px;
+    flex-basis: 300px;
+}

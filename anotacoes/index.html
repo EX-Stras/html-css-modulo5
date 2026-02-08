@@ -13,7 +13,7 @@
         <section class="header">
           <h1>MÓDULO 5</h1>
           <p><i class="material-symbols-outlined">play_arrow</i></p>
-          <p class="instrucoes"><strong>Chegamos no ÚLTIMO MÓDULO</strong></p>
+          <p class="instrucoes">Chegamos no ÚLTIMO MÓDULO</p>
         </section>
     </header>
 
@@ -64,6 +64,12 @@
           <a href="https://ex-stras.github.io/html-css-modulo5/exer6/index.html">Align Content</a>
         </section>
       </div>
+
+      <div class="alinhamento">
+        <section class="link">
+          <a href="https://ex-stras.github.io/html-css-modulo5/exer7/index.html">Align Content</a>
+        </section>
+      </div>
       
       <p>Os projetos desse módulo:</p>
 
@@ -99,7 +105,8 @@
       <pre>
         <code>
             .pai {
-              flex-direction: row; (configuração padrão)
+              flex-direction: row; 
+              (configuração padrão)
             }
         </code>
       </pre>
@@ -284,7 +291,8 @@
         <code>
           .pai {
             flex-flow:row nowrap;
-            align-itens: stretch; (valor padrão)
+            align-itens: stretch;
+             (valor padrão)
           }
         </code>
       </pre>
@@ -295,7 +303,8 @@
         <code>
            .pai {
             flex-flow:row nowrap;
-            align-itens: flex-start; ou flex-end; ou center;
+            align-itens: flex-start;
+             ou flex-end; ou center;
            }
         </code>
       </pre>   
@@ -312,7 +321,8 @@
         <code>
           .pai {
             flex-flow: row wrap;
-            align-content: stretch; (valor padrão)
+            align-content: stretch;
+             (valor padrão)
           }
         </code>
       </pre>
@@ -405,7 +415,8 @@
         <pre>
           <code>
             .filho {
-              order: 0; (valor padrão)
+              order: 0;
+               (valor padrão)
             }
           </code>
         </pre>
@@ -459,6 +470,43 @@
         <p>Eu fiz desse jeito porque nós já conhecemos essas características vindo do  <strong>Align itens</strong>, se estiver com dúvida leia o que cada uma faz lá.</p>
         
         <p>Resumindo, ele vai alinhar o item de acordo com o cross-axis.</p>
+      </main>
+
+      <main class="principal">
+        <h1>Flex Basis</h1>
+        <p>Define o "tamanho do elemento".</p>
+
+        <pre>
+          <code>
+            .filho {
+             flex-basis: auto;
+             (valor padrão)
+            }
+          </code>
+        </pre>
+
+        <p>Nesse caso o tamanho do item aumenta de acordo com o tamanho do conteúdo.</p>
+
+        <pre>
+          <code>
+            .filho {
+             flex-basis: 200px;
+            }
+          </code>
+        </pre>
+
+        <p>Eu sei que o width pode fazer a mesma coisa, mas tem um porém.</p>
+
+        <p>Enquanto tiver espaço as caixas ou a caixa vai ter 200px, mas se não for possível, as caixas vão diminuir de tamanho gradualmente e igualmente.</p>
+
+        <pre>
+          <code>
+            .filho {
+             flex-basis: auto;
+            }
+          </code>
+        </pre>
+        
       </main>
 
     <footer>
