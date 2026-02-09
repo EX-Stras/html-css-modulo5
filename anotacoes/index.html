@@ -590,7 +590,7 @@
           </code>
         </pre>
 
-        <p>Vamos por partes, o que significa o 2? Já vimos que o 0 signif9ca não pode, e o 1 significa "pode", eu coloquei entre aspas porque qualquer número diferente de zero está liberado para executar a ação.</p>
+        <p>Vamos por partes, o que significa o 2? Já vimos que o 0 significa não pode, e o 1 significa pode, eu coloquei entre aspas porque qualquer número diferente de zero está liberado para executar a ação.</p>
 
         <p>O número que vem depois indica quanto ele vai crescer comparado aos outros que também vão (ou diminuir).</p>
 
@@ -602,6 +602,36 @@
         
       </main>
 
+      <main class="principal">
+        <h1>Flex (short - hand)</h1>
+        <p>É uma shorthand para flex basis, grow e shrink.</p>
+        <pre>
+          <code>
+            <strong>Sem shorthand:</strong>
+
+            .filho {
+              flex-grow: 0;
+              flex-shrink: 1;
+              flex-basis: 150px;
+            }
+
+            <strong>Com shorthand:</strong>
+
+            .filho {
+              flex: 0 1 150px;
+            }
+            
+          </code>
+        </pre>
+
+        <p>Acho que deu pra entender, a primeira propriedade é o grow, a segunda é o shrink e a terceira é o basis.</p>
+
+        <p>Claro que tem mais coisas, se não eu não criaria um tópico só pra isso.</p>
+
+        
+        
+      </main>
+      
     <footer>
       <p>Esse site foi feito por <a href="">Lucas Menêzes Cândido</a> para prática de HTML5 e CSS3</p>
     </footer>
