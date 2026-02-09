@@ -29,9 +29,8 @@ p {
     text-align: center;
     background-color: aqua;
     border: 3px dashed;
-    flex-basis: 200px;
 }
 
-#n1 { flex-grow: 0; flex-shrink: 0; } 
-#n2 { flex-grow: 1; flex-shrink: 1;} 
-#n3 { flex-grow: 2; flex-shrink: 2; }
+#n1 { flex: 1 2 200px} 
+#n2 { flex: 2 0 200px} 
+#n3 { flex: 0 1 200px}

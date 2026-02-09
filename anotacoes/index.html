@@ -628,8 +628,83 @@
 
         <p>Claro que tem mais coisas, se não eu não criaria um tópico só pra isso.</p>
 
+        <pre>
+          <code>
+            .filho {
+              flex-grow: 0;
+              flex-shrink: 1;
+              flex-basis: auto;
+            }
+
+            <strong>É o mesmo que colocar:</strong>
+
+            .filho {
+              flex: initial;
+            }
+          </code>
+        </pre>
+
+        <p>Essas são as configurações padrões.</p>
         
+         <pre>
+          <code>
+            .filho {
+              flex-grow: 0;
+              flex-shrink: 0;
+              flex-basis: auto;
+            }
+
+            <strong>É o mesmo que colocar:</strong>
+
+            .filho {
+              flex: none;
+            }
+          </code>
+        </pre>
+
+        <p>Essa é a configuração menos flexível possível, o tamanho do elemento vai depender do tamanho do conteúdo e não vai se adaptar ao tamanho do pai.</p>
+
+         <pre>
+          <code>
+            .filho {
+              flex-grow: 1;
+              flex-shrink: 1;
+              flex-basis: auto;
+            }
+
+            <strong>É o mesmo que colocar:</strong>
+
+            .filho {
+              flex: auto;
+            }
+          </code>
+        </pre>
+
+        <p>Esse valor é o contrário do flex: none, esse é o mais flexível possível, ele se adapta a qualquer situação.</p>
+
+         <pre>
+          <code>
+            .filho {
+              flex-grow: 3;
+              flex-shrink: 1;
+              flex-basis: auto;
+            }
+
+            <strong>É o mesmo que colocar:</strong>
+
+            .filho {
+              flex: 3;
+            }
+          </code>
+        </pre>
         
+        <p>Colocar flex: 3 ou flex: 9, ou flex: 9e50000 são todas configurações apenas do flex grow, as outras configurações ficam com seus valores padrões.</p>
+        
+      </main>
+
+      <main class="principal">
+        <h1>De flex-box é isso!!!</h1>
+        <p>Isso foi toda a parte teórica de flex box, agora vamos trabalhar a parte prática e logo depois o grid layout.</p>
       </main>
       
     <footer>
