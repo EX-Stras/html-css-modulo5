@@ -53,10 +53,11 @@ section.menu a {
 }
 
 section.menu a:hover {
-    background-color: var(--cor-primaria);
+    background-color: rgba(255, 255, 255, 0.517);
+    color: var(--cor-primaria);
     border: 1px solid black;
     box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.496);
-    transition: ease 1s;
+    transition: ease 0.3s;
 }
 
 i.material-symbols-outlined {
@@ -108,7 +109,7 @@ section.inicio > a:hover {
 }
 
 section.inicio {
-    width: 60%;
+    width: 100%;
     margin: auto;
     text-align: center;
 }
