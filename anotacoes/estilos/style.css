@@ -130,6 +130,11 @@ strong {
     color: black;
 }
 
+label, input {
+    color: rgba(0, 0, 0, 0.558);
+    padding: 0 30px;
+}
+
 footer {
     padding: 12px;
     background-color: var(--cor-primaria);

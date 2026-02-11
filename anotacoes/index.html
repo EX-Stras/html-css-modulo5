@@ -719,8 +719,49 @@
         <p>Chamamos de <strong>grid lines</strong>, as linhas que delimitam as colunas, elas são diferentes dos row tracks. Podemos numerar essas grid lines, começando do 1 e indo para o infinito e além.</p>
         <p>As linhas horizontais também são chamadas de <strong>grid lines</strong>, só que elas delimitam as tracks de linhas.</p>
         <p>Se contarmos da última linha até a primeira começamos em -1, se contarmos da primeira linha até a última, começamos em 1.</p>
-        <p>Se eu escrever que uma linha vai da grid line 2 até a -2, é o mesmo que dizer que a área começa na segunda linha e termina na penúltima.</p>
-        <pre></pre>
+        <p>Se eu escrever que uma linha vai da grid line 2 vertical até a -2 vertical, é o mesmo que dizer que a área começa na segunda linha vertical e termina na penúltima vertical.</p>
+        <p>Chamamos de <strong>grid area</strong> quando temos grid itens conectados em duas dimensões, vertical e horizontal. Um exemplo é se eu dissese pra criar uma caixa da linha vertical e horizontal 2 até a linha vertical e horizontal -3 eu estaria criando uma grid area.</p>
+        <p>Chamamos de <strong>grid gap</strong> o espaçamento de um grid item para o outro, é possível configurá-los individualmente. Isso não muda o tamanho dos grid itens.</p>
+      </main>
+
+      <main class="principal">
+        <h1>Propriedades do Conteiner (1)</h1>
+        <p>O principal sem dúvidas é o:</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+            }
+          </code>
+        </pre>
+
+        <p>Sem ele as outras não funcionam.</p>
+        <p>Mais duas importantes aqui:</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-columns: #;
+              grid-template-rows: #;
+            }
+          </code>
+        </pre>
+        
+        <p>Ele define quantas linhas e quantas colunas vão ter o grid.</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-gap: #;
+            }
+          </code>
+        </pre>
+
+        <p>Define a distancia entre os grid-itens.</p>
+
+        <p>Para criar um grid layout basta colocar a propriedade display: grid em um elemento pai que todos os elementos dentro dele serão grid itens.</p>
+        
       </main>
       
     <footer>
