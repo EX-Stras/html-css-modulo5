@@ -18,12 +18,21 @@ header h1, header p {
 main {
     background-color: rgba(128, 128, 128, 0.555);
     padding: 10px;
+}
+
+section.oi1 {
     display: flex;
     flex-flow: row-reverse wrap;
     justify-content: space-between;
 }
 
-main h2, header p {
+section.oi2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+main h2, main p {
     margin: 10px;
 }
 
@@ -31,7 +40,6 @@ article {
     flex: 0 1 700px;
     text-align: justify;
     margin: auto;
-    order: 1;
 }
 
 img {
