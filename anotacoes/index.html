@@ -885,6 +885,104 @@
         <p>Também tem o stretch, que tá aqui só pra marcar presença.</p>
 
         <p>Esses são os 7 valores que o justify e o align content podem levar, acho que não preciso expliar cada um de novo então vou deixar só essa explicalção mesmo.</p>
+  
+      </main>
+
+      <main class="principal">
+        <h1>Grid-auto</h1>
+        <p>Veremos 2 novas propriedades nesse tópico, grid-auto-column e grid-auto-row.</p>
+
+        <p>Ela é bem simples:</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-auto-row: 100px;
+              grid-auto-column: 100px;
+            }
+          </code>
+        </pre>
+        <p>Quando usamos o grid template ele define uma linha ou coluna de cada vez, desse modo, teríaros que escrever a mesma onfiguração diversas vezes.</p>
+
+        <p>Já com essa propriedade isso não acontece.</p>
+
+        <p>Nesse caso, todas as colunas e linhas seriam 100x100px, independente da quantidade, a não ser que fizessemos a alteração manual, usando o templete.</p>
+      </main>      
+
+      <main class="principal">
+        <h1>Shorthands</h1>
+        <p>O primeiro shorthand que eu vou mostrar é o place-itens, que configura o align-itens e o justify-itens:</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-rows: 100px;
+              grid-template-columns: 100px;
+              place-itens: stretch center;
+            }
+
+            <strong>É o mesmo que:</strong>
+
+            .pai {
+              display: grid;
+              grid-template-rows: 100px;
+              grid-template-columns: 100px;  
+              justify-itens: center;
+              align-itens: stretch;
+            }
+            
+          </code>
+        </pre>
+
+        <p>Primeiro sempre o align depois o justify.</p>
+
+        <p>Seguindo a mesma lógica temos o place-content, que é auto explicativo:</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-rows: 100px;
+              grid-template-columns: 100px;
+              place-content: space-between center;
+            }
+
+            <strong>É o mesmo que:</strong>
+
+            .pai {
+              display: grid;
+              grid-template-rows: 100px;
+              grid-template-columns: 100px; 
+              justify-content: center;
+              align-content: space-between;
+            }
+          </code>
+        </pre>
+        
+        <p>Também começa pelo align e depois vai pro justify.</p>
+
+        <p>O grid-template colums e rows também tem um shorthand, ele se chama grid-template:</p>
+
+        <pre>
+          <code>
+
+             .pai {
+              display: grid;
+              grid-template: 100px 100px 100px / auto auto auto;
+             }
+
+             <strong>É o mesmo que:</strong>
+
+            .pai {
+              display: grid;
+              grid-template-rows: 100px 100px 100px;
+              grid-template-columns: auto auto auto; 
+            }
+
+          </code>
+        </pre>
+        
+        <p>Nesse aí o grid template rows vem antes do columns.</p>
         
       </main>
       
