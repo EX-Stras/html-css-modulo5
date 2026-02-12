@@ -740,7 +740,7 @@
       </main>
 
       <main class="principal">
-        <h1>Propriedades do Conteiner (1)</h1>
+        <h1>Propriedades principais</h1>
         <p>O principal sem dúvidas é o:</p>
         <pre>
           <code>
@@ -776,8 +776,115 @@
         <p>Define a distancia entre os grid-itens.</p>
 
         <p>Para criar um grid layout basta colocar a propriedade display: grid em um elemento pai que todos os elementos dentro dele serão grid itens.</p>
+        
+      </main>
 
-        <p></p>
+      <main class="principal">
+        <h1>Align & Justify</h1>
+        <p>Um macete aqui pra lembrar.</p>
+        <p>Quando falamos de align  no grid, sempre devemos lembrar que se refere ao alinhamento vertical.</p>
+        <p>Já quando falamos justify, nos referimos ao alinhamento horizontal.</p>
+
+        <p>Trabalharemos as tags à seguir neste tópico:</p>
+        
+          <p><strong>align-itens</strong></p>
+          <p><strong>justify-itens</strong></p>
+          <p><strong>align-content</strong></p>
+          <p><strong>justify-content</strong></p>
+        
+          <p>Vamos falar primeiro sobre o align-itens.</p>
+
+          <p>Ele alinha o item verticalmente deentro do seu grid.</p>
+
+          <p>O valor padrão dessa propriedade é o stretch, que estica o item de uma linha horizontal até a outra.</p>
+          
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: 100px;
+              align-itens: stretch;
+            }
+          </code>
+        </pre>
+
+        <p>Nesse caso o item vai cobrir os 100px.</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: 100px;
+              align-itens: start;
+            }
+          </code>
+        </pre>
+        
+        <p>Auto explicativo, ele alinha todos os itens no início do grid, lembrando, o alinhamento é vertical.</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: 100px;
+              align-itens: end;
+            }
+          </code>
+        </pre>
+        
+        <p>Esse alinha no final do grid.</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: 100px;
+              align-itens: center;
+            }
+          </code>
+        </pre>
+        
+        <p>Esse alinha no centro, nesse caso o conteúdo vai ficar no px 50;</p>
+
+        <p>Agora o justify itens é a mesma coisa, as propriedades são iguais, a diferença é que o justify alinha horizontalmente.</p>
+
+        <p>Vou colocar os valores de novo só pra falar que puz.</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template-columns: auto;
+              grid-template-rows: 100px;
+              justify-itens: start
+              ou end
+              ou center
+              ou stretch (padrão)
+            }
+          </code>
+        </pre>
+        
+        <p>Lembrando que o alinhamento é da esquerda para a direita.</p>
+
+        <p>Agora vamos mecher com as propriedades de content.</p>
+
+        <p>Começando por align content:</p>
+
+        <p>O content é um conjunto de grid itens.</p>
+
+        <p>Ou seja, essa propriedade alinha o conjunto deles verticalmente.</p>
+
+        <p>Lembra do justify content lá do flex box? as propriedades dele são iguais em todos comandos que tem content no nome.</p>
+
+        <p>Ou seja, start, end, center, space-around, space-between e space-evenly.</p>
+
+        <p>Também tem o stretch, que tá aqui só pra marcar presença.</p>
+
+        <p>Esses são os 7 valores que o justify e o align content podem levar, acho que não preciso expliar cada um de novo então vou deixar só essa explicalção mesmo.</p>
         
       </main>
       
