@@ -1079,6 +1079,107 @@
         <p>Na teoria é bem fácil do que na prática.</p>
 
         <p>O item vai começar na linha 2 e parar na linha 4 (ele vai ocupar 2 linhas inteiras), e vai começar na coluna 1 e terminar na 3 (são 2 colunas inteiras), isso vai formar um grid item 4x4.</p>
+
+        <p>Uma função interessante aqui é o "span":</p>
+
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template: 100px /
+              repeat(3, 100px);
+              grid-auto-rows: 100px;
+              place-content: center;
+            }
+
+            .filho {
+              grid-row-start: 2;
+              grid-row-end: span 2;
+              grid-column-start: 1;
+              grid-column-end: span 2;
+            }
+          </code>
+        </pre>
+        
+        <p>Vai dar o mesmo resultado do anterior, um bloco 2x2, esse span aumenta 2 linhas ou 2 colunas nesse caso.</p>
+        
+      </main>
+
+      <main class="principal">
+        <h1>Shothand</h1>
+        <p>Isso é uma simplificação do start & end:</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template: 100px /
+              repeat(3, 100px);
+              grid-auto-rows: 100px;
+              place-content: center;
+            }
+
+            .filho {
+              grid-row-start: 2;
+              grid-row-end: span 2;
+              grid-column-start: 1;
+              grid-column-end: span 2;
+            }
+
+            <strong>É o mesmo que:</strong>
+
+            .pai {
+              display: grid;
+              grid-template: 100px /
+              repeat(3, 100px);
+              grid-auto-rows: 100px;
+              place-content: center;
+            }
+
+            .filho {
+             grid-row: 2 / 4;
+             grid-column: 1 / 3;
+            }
+          </code>
+        </pre>
+
+            <p>Começa pelo "start".</p>
+
+            <p>E pelo incrível que pareça dá pra simplificar mais ainda:</p>
+  
+            <pre>
+              <code>
+                 .pai {
+              display: grid;
+              grid-template: 100px /
+              repeat(3, 100px);
+              grid-auto-rows: 100px;
+              place-content: center;
+            }
+
+            .filho {
+             grid-row: 2 / 4;
+             grid-column: 1 / 3;
+            }
+
+            <strong>É o mesmo que:</strong>
+
+             .pai {
+              display: grid;
+              grid-template: 100px /
+              repeat(3, 100px);
+              grid-auto-rows: 100px;
+              place-content: center;
+            }
+
+            .filho {
+             grid-area: 2 / 1 / 4 / 3;
+            }
+
+              </code>
+            </pre>
+            
+            <p>A ordem é start row, start column, end row, end column.</p>
+            
       </main>
       
     <footer>
