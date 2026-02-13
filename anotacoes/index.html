@@ -985,6 +985,50 @@
         <p>Nesse aí o grid template rows vem antes do columns.</p>
         
       </main>
+
+      <main class="principal">
+        <h1>Repeat & Fração</h1>
+        <p>Vou mostrar na prática o que é a função repeat():</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template: 100px 100px 100px/ auto auto auto;
+            }
+
+            <strong>É o mesmo que:</strong>
+
+            .pai {
+              display: grid;
+              grid-template: repeat(3, 100px) / repeat(3, auto);
+            }
+            
+          </code>
+        </pre>
+
+        <p>Acho que deu pra entender mas eu vou explicar.</p> 
+        <p>O primeiro parâmentro é quantas vezes o valor vai repetir, no caso é 3 vezes, o segundo parâmetro é qual valor vai repetir, no caso é o 100px e o auto.</p>
+
+        <p>Agora frações, elas são representadas por exemplo:</p>
+
+      <pre>
+        <code>
+          .pai {
+            display: grid;
+            width: 200px;
+            height: 200px;
+            grid-template: 0.5fr 1.5fr / 0.5fr 1.5fr;
+          }
+        </code>
+      </pre>
+
+      <p>Nesse caso a primeira linha e a primeira coluna vão ocupar 50px e a segunda linha e coluna vão ocupar 150px.</p>
+
+      <p>Seria como se estivessemos dividindo um bolo, o que ficou com 150px na teoria ficou com 3/4 do bolo, e o que ficou com 50px ficou com 1/4.</p>
+
+      <p>Você também pode misturar medidas, por exemplo fr, px, %, mas você não é maluco.</p>
+        
+      </main>
       
     <footer>
       <p>Esse site foi feito por <a href="">Lucas Menêzes Cândido</a> para prática de HTML5 e CSS3</p>
