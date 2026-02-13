@@ -1055,9 +1055,30 @@
       </main>
 
       <main class="principal">
-        <h1></h1>
-        <p></p>
-        <pre></pre>
+        <h1>Start & End</h1>
+        <p>Essas configurações vão servir para definir onde o item vai começar e onde vai acabar no grid.</p>
+        <pre>
+          <code>
+            .pai {
+              display: grid;
+              grid-template: 100px /
+              repeat(3, 100px);
+              grid-auto-rows: 100px;
+              place-content: center;
+            }
+
+            .filho {
+              grid-row-start: 2;
+              grid-row-end: 4;
+              grid-column-start: 1;
+              grid-column-end: 3;
+            }
+          </code>
+        </pre>
+
+        <p>Na teoria é bem fácil do que na prática.</p>
+
+        <p>O item vai começar na linha 2 e parar na linha 4 (ele vai ocupar 2 linhas inteiras), e vai começar na coluna 1 e terminar na 3 (são 2 colunas inteiras), isso vai formar um grid item 4x4.</p>
       </main>
       
     <footer>
